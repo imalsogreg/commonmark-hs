@@ -30,9 +30,9 @@ class HasMath a where
 
 instance HasMath (Html a) where
   inlineMath t = addAttribute ("class", "math inline") $
-    htmlInline "span" $ Just $ htmlText ("\\(" <> t <> "\\)")
+    htmlInline "span" $ Just $ htmlRaw ("\\(" <> t <> "\\)")
   displayMath t = addAttribute ("class", "math display") $
-    htmlInline "span" $ Just $ htmlText ("\\[" <> t <> "\\]")
+    htmlInline "span" $ Just $ htmlRaw ("\\[" <> t <> "\\]")
 
 instance (HasMath i, Monoid i) => HasMath (WithSourceMap i) where
   inlineMath t = (inlineMath t) <$ addName "inlineMath"

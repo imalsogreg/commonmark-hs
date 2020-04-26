@@ -51,5 +51,5 @@ as math, and not given its normal commonmark meaning.
 ```````````````````````````````` example
 $b<a>c$
 .
-<p><span class="math inline">\(b&lt;a&gt;c\)</span></p>
+<p><span class="math inline">\(b<a>c\)</span></p>
 ````````````````````````````````
