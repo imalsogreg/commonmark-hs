@@ -37,7 +37,7 @@ main = do
              , ("test/subscript.md", subscriptSpec)
              , ("test/pipe_tables.md", pipeTableSpec)
              , ("test/footnotes.md", footnoteSpec)
-             , ("test/math.md", mathSpec)
+             , ("test/math.md", mathSpec PlainMath)
              , ("test/emoji.md", emojiSpec)
              , ("test/autolinks.md", autolinkSpec)
              , ("test/definition_lists.md", definitionListSpec)
